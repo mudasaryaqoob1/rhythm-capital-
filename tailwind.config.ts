@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        urbanist: ['Urbanist', 'sans-serif'], // Add Urbanist font
+        roboto: ['Roboto', 'sans-serif'],    // Add Roboto font (if needed)
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
