@@ -6,16 +6,16 @@ import InfoPenal from "../components/InfoPanel";
 import Link from "next/link";
 const Login = () => {
   return (
-    <div className=" xl:bg-[url('/bg-imges/ds.png')] 2xl:w-full flex lg:justify-center bg-cover ">
-      <div className="flex xl:justify-center md:w-[1440px]">
+    <div className=" xl:bg-[url('/bg-imges/ds.png')] h-screen  flex justify-center bg-cover ">
+      <div className="flex  xl:w-[1440px]">
         {" "}
         {/* Left container */}
-        <div className="2xl:w-full">
-          <div className="bg-[url('/bg-imges/bg.png')] xl:bg-none bg-cover md:max-w-[619px] 2xl:w-full">
-            <div className=" h-screen   w-[619px]">
-              <div className="flex flex-col w-full xl:w-[619px] justify-evenly md:fixed h-screen">
+        <div className="">
+          <div className="bg-[url('/bg-imges/bg.png')] xl:bg-none bg-cover">
+            <div className="">
+              <div className="flex flex-col justify-evenly w-full xl:w-[619px] h-screen">
                 <div className="w-full flex flex-col items-center justify-center ">
-                  <div className="flex flex-col justify-center items-center gap-6">
+                  <div className="flex flex-col justify-center items-center w-full gap-6">
                     <div className="">
                       <img src="/formimges/login-imges/logo-71.png" alt="" />
                     </div>
@@ -28,7 +28,7 @@ const Login = () => {
                       </h1>
                     </div>
                   </div>
-                  <div className="w-full px-6 lg:px-32 xl:p-0 xl:w-[360px]">
+                  <div className="w-full xl:max-w-[360px]">
                     <div className="">
                       <Inputs
                         type="email"
@@ -86,7 +86,7 @@ const Login = () => {
                     </div>
                   </div>
                 </div>
-                <div className=" ml-[32px] text-[#475467] font-urbanist text-[14px] leading-5">
+                <div className=" lg:ml-8 mt-6 text-[#475467] font-urbanist text-[14px] leading-5">
                   <h1>© Rythm Capital 2027</h1>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const Login = () => {
           </div>
         </div>
         {/* Right container */}
-        <div className="w-full">
+        <div className="scrollbar-hide overflow-y-auto">
           <InfoPenal />
         </div>
       </div>

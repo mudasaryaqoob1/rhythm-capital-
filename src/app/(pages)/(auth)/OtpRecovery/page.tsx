@@ -8,15 +8,16 @@ import OTPComponent from "../components/OTPComponent"
 const OtpRecovery = () => {
 
   return (
-<div className=" xl:bg-[url('/bg-imges/ds.png')] 2xl:w-full flex lg:justify-center bg-cover ">
-      <div className="flex xl:justify-center md:w-[1440px]">
+
+<div className="  xl:bg-[url('/bg-imges/ds.png')] h-screen  flex justify-center bg-cover ">
+      <div className="flex  xl:w-[1440px]">
         {" "}
         {/* Left container */}
-        <div className="2xl:w-full">
-          <div className="bg-[url('/bg-imges/bg.png')] xl:bg-none bg-cover md:max-w-[619px] 2xl:w-full">
-            <div className=" h-screen  w-[619px] bg-no-repeat ">
-              <div className="flex flex-col w-full xl:w-[619px] justify-evenly fixed h-screen">
-              <div className="w-full flex flex-col items-center justify-center ">
+        <div className="">
+          <div className="bg-[url('/bg-imges/bg.png')] xl:bg-none bg-cover ">
+            <div className=" ">
+              <div className="flex flex-col justify-evenly w-full xl:w-[619px] h-screen">
+              <div className="w-full flex flex-col items-center justify-center">
             <div className="flex flex-col justify-center items-center gap-6">
               <div className="">
                 <img src="/formimges/login-imges/logo-71.png" alt="" />
@@ -56,7 +57,7 @@ const OtpRecovery = () => {
           </div>
         </div>
         {/* Right container */}
-        <div className="w-full">
+        <div className="scrollbar-hide overflow-y-auto">
           <InfoPenal />
         </div>
       </div>
