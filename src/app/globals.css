@@ -65,3 +65,9 @@
 .bg-fixed {
   background-attachment: fixed;
 }
+.ant-form{
+  display: flex!important;
+    flex-direction: column!important;
+    justify-items: center!important;
+    align-items: center!important;
+}

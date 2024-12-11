@@ -10,7 +10,8 @@ import 'swiper/css/pagination';
 
 const SliderComponent = () => {
   return (
-    <div className="swiper-wrapper ">
+    
+    <div className="swiper-wrapper max-w-[236px]">
       <Swiper
         // modules={swiperModules}
         // spaceBetween={50}

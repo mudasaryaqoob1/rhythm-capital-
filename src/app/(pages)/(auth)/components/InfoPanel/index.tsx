@@ -13,9 +13,12 @@ const InfoPenal = () => {
   ];
 
   return (
-    <div className="bg-[url('/bg-imges/bg3.png')] bg-cover bg-no-repeat w-full hidden xl:flex flex-col items-center justify-center overflow-hidden">
-      <div className="max-w-[236px] mt-[80px]">
-        <SliderComponent />
+    <div className="bg-[url('/bg-imges/r.png')]   bg-cover bg-no-repeat w-full hidden xl:flex flex-col items-center justify-center overflow-hidden">
+      <div className="bg-[url('/bg-imges/bgslider.png')] bg-cover static bg-no-repeat h-[430.7px] w-[553.31px] max-w-full z-10  mt-[56px]">
+    
+      <div className=" pl-[200px] mt-[56px]">
+      <SliderComponent /></div>
+        
       </div>
       <div className="ml-[64px] mt-[30px]">
         <div className="mb-8">
