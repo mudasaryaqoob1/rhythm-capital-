@@ -1,16 +1,15 @@
 "use client";
 import React from "react";
-import { Inputs } from "@/app/(pages)/(auth)/components/inputs"
+import { Inputs } from "@/app/(pages)/(auth)/components/inputs";
 import Image from "next/image";
 import InfoPenal from "../components/InfoPanel";
 import Link from "next/link";
 const ReNewPassword = () => {
-
   return (
     <div className="xl:bg-[url('/bg-imges/ds.png')] h-screen  flex justify-center bg-cover ">
-        <div className="flex  xl:w-[1440px]">
-      {/* Left container */}
-      <div className="">
+      <div className="flex  xl:w-[1440px]">
+        {/* Left container */}
+        <div className="">
           <div className="bg-[url('/bg-imges/bg.png')] xl:bg-none bg-cover">
             <div className="">
               <div className="flex flex-col justify-evenly w-full xl:w-[619px] h-screen">
@@ -29,28 +28,28 @@ const ReNewPassword = () => {
                     </div>
                   </div>
                   <div className="w-full xl:max-w-[360px]">
-                  <div className="">
-                <Inputs
-                 type="password"
-                 name="Enter_Password"
-                 heading="Password"
-                 Placeholder="Password"
-                 svg={""}
-                 svg2={<img src="/visibility.svg" alt="" />}
-                 className="mt-[20px] w-full xl:max-w-[360px]"
-                />
-              </div>
-              <div className="">
-                <Inputs
-                  type="password"
-                  name="Confirm Password"
-                  heading="Confirm Password"
-                  Placeholder="Confirm Password"
-                  svg={""}
-                  svg2={<img src="/visibility.svg" alt="" />}
-                  className="mt-[20px] w-full xl:max-w-[360px]"
-                />
-              </div>
+                    <div className="">
+                      <Inputs
+                        type="password"
+                        name="Enter_Password"
+                        heading="Password"
+                        Placeholder="Password"
+                        svg={""}
+                        svg2={<img src="/visibility.svg" alt="" />}
+                        className="mt-[20px] w-full xl:max-w-[360px]"
+                      />
+                    </div>
+                    <div className="">
+                      <Inputs
+                        type="password"
+                        name="Confirm Password"
+                        heading="Confirm Password"
+                        Placeholder="Confirm Password"
+                        svg={""}
+                        svg2={<img src="/visibility.svg" alt="" />}
+                        className="mt-[20px] w-full xl:max-w-[360px]"
+                      />
+                    </div>
                     <div className="mt-5 flex justify-between items-center">
                       <div className="">
                         <input
@@ -73,9 +72,9 @@ const ReNewPassword = () => {
                     </div>
                   </div>
                   <div className="mt-2">
-              <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform   rounded-[8px] px-24 md:px-[160.5px]">
-              Confirm
-              </button>
+                    <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform   rounded-[8px] px-24 md:px-[160.5px]">
+                      Confirm
+                    </button>
                     <div className="flex justify-center mt-4">
                       <h1 className="text-[#626974] font-normal text-center font-urbanist tracking-[0%] leading-[20px] text-[14px]">
                         Don’t have an account?
@@ -94,17 +93,12 @@ const ReNewPassword = () => {
           </div>
         </div>
 
-
-
-
-    
-      {/* Right container */}
-    <div className="scrollbar-hide overflow-y-auto">
-        <InfoPenal/>
+        {/* Right container */}
+        <div className="scrollbar-hide overflow-y-auto">
+          <InfoPenal />
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-  
   );
 };
 

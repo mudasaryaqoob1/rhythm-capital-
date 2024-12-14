@@ -77,3 +77,31 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
 }
+#my-input.ant-input-outlined:hover {
+  border-color: transparent;
+}
+/* .anticon svg {
+  display: none !important;
+} */
+/* .anticon {
+  display: none;
+} */
+.custom-input {
+  border-color: #e0e0e0; /* Default border color */
+  box-shadow: none; /* Remove default Ant Design shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.custom-input:hover {
+  border-color: #89AD28; /* Custom hover border color */
+}
+
+.custom-input:focus {
+  border-color: #89AD28 !important; /* Custom focus border color */
+  box-shadow: 0 0 0 4px rgba(193, 243, 56, 0.2); /* Light green shadow */
+}
+
+.custom-input:not(:focus) {
+  border-color: #e0e0e0 !important; /* Remove blue border after blur */
+  box-shadow: none !important; /* Remove any shadow after blur */
+}
