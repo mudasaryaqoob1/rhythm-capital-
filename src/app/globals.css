@@ -24,7 +24,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Custom Navigation Buttons */
 .swiper-button-prev,
 .swiper-button-next {
@@ -38,7 +37,6 @@
   font-size: 20px;
   cursor: pointer;
   border: none;
-  
 }
 
 /* Pagination Dots */
@@ -65,12 +63,13 @@
 .bg-fixed {
   background-attachment: fixed;
 }
-.ant-form{
-  display: flex!important;
-    flex-direction: column!important;
-    justify-items: center!important;
-    align-items: center!important;
-}.scrollbar-hide {
+.ant-form {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-items: center !important;
+  align-items: center !important;
+}
+.scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -80,12 +79,7 @@
 #my-input.ant-input-outlined:hover {
   border-color: transparent;
 }
-/* .anticon svg {
-  display: none !important;
-} */
-/* .anticon {
-  display: none;
-} */
+
 .custom-input {
   border-color: #e0e0e0; /* Default border color */
   box-shadow: none; /* Remove default Ant Design shadow */
@@ -93,15 +87,88 @@
 }
 
 .custom-input:hover {
-  border-color: #89AD28; /* Custom hover border color */
+  border-color: #89ad28; /* Custom hover border color */
 }
 
 .custom-input:focus {
-  border-color: #89AD28 !important; /* Custom focus border color */
+  border-color: #89ad28 !important; /* Custom focus border color */
   box-shadow: 0 0 0 4px rgba(193, 243, 56, 0.2); /* Light green shadow */
 }
 
 .custom-input:not(:focus) {
   border-color: #e0e0e0 !important; /* Remove blue border after blur */
   box-shadow: none !important; /* Remove any shadow after blur */
+}
+.plane-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 6px -2px #10182808;
+  border: 1.5px solid #022213;
+  box-shadow: 0px 12px 16px -4px #10182814;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.credit-card-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.credit-card-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hidden checkbox */
+.inputs[type="checkbox"] {
+  display: none;
+}
+
+/* Custom checkbox label */
+.labels {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* When the checkbox is checked */
+.inputs[type="checkbox"]:checked + label {
+  background-color: #c1f338;
+  border-color: #c1f338;
+}
+
+/* Checkmark icon */
+label svg {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Show checkmark when checked */
+input[type="checkbox"]:checked + label svg {
+  opacity: 1;
+}
+
+/* Text next to checkbox */
+span {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #555;
+  font-family: "Urbanist", sans-serif;
 }

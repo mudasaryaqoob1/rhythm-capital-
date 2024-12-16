@@ -101,7 +101,7 @@ const SignUp = () => {
                     </div>
                     <div className="">
                       <h1 className="mt-[20px] font-normal font-urbanist text-[16px] text-[#4D525A] leading-[24px]">
-                      Password
+                        Password
                       </h1>
                       <Input
                         type="password"
@@ -137,33 +137,34 @@ const SignUp = () => {
                         }
                       />
                     </div>
-                   
-                      <div className="mt-5">
-                        <input
-                          type="checkbox"
-                          id="myCheckbox"
-                          // This will trigger handleCheckboxChange function
-                        />
-                        <label
-                          className="text-[#344054] font-normal text-center font-urbanist leading-[20px] text-[14px] pl-1"
-                          htmlFor="myCheckbox"
-                        >
-                         I have read and agree to the Terms of Use and Privacy <span className="lg:pl-4">Policy</span>
 
-                        </label>
-                      </div>
-              
+                    <div className="mt-5">
+                      <input
+                        type="checkbox"
+                        id="myCheckbox"
+                        // This will trigger handleCheckboxChange function
+                      />
+                      <label
+                        className="text-[#344054] font-normal text-center font-urbanist leading-[20px] text-[14px] pl-1"
+                        htmlFor="myCheckbox"
+                      >
+                        I have read and agree to the Terms of Use and Privacy{" "}
+                        <span className="lg:pl-4">Policy</span>
+                      </label>
+                    </div>
                   </div>
                   <div className="mt-2">
-                    <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform   rounded-[8px] px-24 md:px-[160.5px]">
-                      Login
-                    </button>
+                    <Link href="/planes">
+                      <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform   rounded-[8px] px-24 md:px-[160.5px]">
+                        Sign up
+                      </button>
+                    </Link>
                     <div className="flex justify-center mt-4">
                       <h1 className="text-[#626974] font-normal text-center font-urbanist tracking-[0%] leading-[20px] text-[14px]">
-                      Already have an account?
+                        Already have an account?
                       </h1>
                       <h1 className="text-[#2D3035] font-semibold text-center font-urbanist tracking-[0%] leading-[20px] text-[14px]">
-                      Login
+                        <Link href="/Login">Login</Link>
                       </h1>
                     </div>
                   </div>
@@ -176,7 +177,7 @@ const SignUp = () => {
           </div>
         </div>
         {/* Right container */}
-        <div className=""></div>
+        {/* <div className=""></div> */}
       </div>
     </div>
   );

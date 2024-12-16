@@ -15,14 +15,14 @@ const InfoPenal = () => {
   return (
     <div className="w-full hidden xl:flex flex-col items-center justify-center">
       <div className="bg-[url('/bg-imges/bgslider.png')] bg-cover static bg-no-repeat h-[430.7px] w-[553.31px] max-w-full z-10  mt-[56px]">
-    
-      <div className=" pl-[200px] mt-[56px]">
-      <SliderComponent /></div>
-        
+        <div className=" pl-[200px] mt-[56px]">
+          <SliderComponent />
+        </div>
       </div>
+      
       <div className="ml-[64px] mt-[30px]">
         <div className="mb-8">
-            <img src="\formimges\login-imges\star.png" alt="" />
+          <img src="\formimges\login-imges\star.png" alt="" />
         </div>
         <div>
           <p className="text-[#FFFFFF] font-semibold font-urbanist leading-[62px] text-[50px] tracking-[-2px]">
@@ -39,7 +39,10 @@ const InfoPenal = () => {
         <div className="my-7">
           <div className="flex -space-x-4">
             {images.map((img, index) => (
-              <div key={index} className="rounded-full shadow-lg border-2 border-white">
+              <div
+                key={index}
+                className="rounded-full shadow-lg border-2 border-white"
+              >
                 <Image
                   src={img}
                   alt={`Avatar ${index + 1}`}
