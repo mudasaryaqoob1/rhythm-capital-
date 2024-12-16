@@ -68,7 +68,7 @@ const Acount = () => {
               <div className="flex flex-col justify-evenly md:px-0 w-full xl:w-[619px] px-4 sm:px-6">
                 <div className="w-full flex flex-col items-center md:justify-center ">
                   <div className="flex flex-col justify-center items-center md:items-start w-full max-w-[456px] gap-6">
-                    <div className="">
+                    <div className="lg:mt-[100px]">
                       <img src="/formimges/login-imges/logo-71.png" alt="" />
                     </div>
                     <div className="mb-8">
@@ -97,7 +97,7 @@ const Acount = () => {
                           {/* Custom Checkbox Label */}
                           <label
                             htmlFor="myCheckbox"
-                            className=" lanebs relative w-6 h-6 border-2 border-gray-400 rounded-md cursor-pointer flex items-center justify-center peer-checked:bg-[#C1F338] peer-checked:border-[#C1F338]"
+                            className=" lanels relative w-6 h-6 border-2 border-gray-400 rounded-md cursor-pointer flex items-center justify-center peer-checked:bg-[#C1F338] peer-checked:border-[#C1F338]"
                           >
                             {/* Checkmark Icon */}
                             <svg
@@ -121,7 +121,7 @@ const Acount = () => {
                             elit.
                           </span>
                         </div>
-                        <button className="mt-3 py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform rounded-[8px] px-[80px] sm:px-[120px] md:px-[160px]">
+                        <button className="my-3 py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform rounded-[8px] px-[80px] sm:px-[120px] md:px-[160px]">
                           Confirm
                         </button>
                       </div>
