@@ -172,3 +172,7 @@ span {
   color: #555;
   font-family: "Urbanist", sans-serif;
 }
+/* جب `li` پر hover ہو، تو اس کے اندر موجود `svg` کے `path` کا stroke رنگ تبدیل ہو جائے گا */
+.menu-item:hover svg path {
+  stroke: black;
+}

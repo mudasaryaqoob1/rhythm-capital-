@@ -7,7 +7,7 @@ import Link from "next/link";
 const Login = () => {
   return (
     <div className=" xl:bg-[url('/bg-imges/ds.png')] h-screen  flex justify-center bg-cover ">
-      <div className="flex  xl:w-[1440px]">
+      <div className="flex w-full xl:max-w-[1440px]">
         {" "}
         {/* Left container */}
         <div className="">
@@ -35,7 +35,7 @@ const Login = () => {
                         name="Email"
                         heading="Email"
                         Placeholder="olivia@untitledui.com"
-                        svg={<img src="/mail.svg" alt="" />}
+                        svg={''}
                         svg2
                         className="w-full xl:max-w-[360px] "
                       />

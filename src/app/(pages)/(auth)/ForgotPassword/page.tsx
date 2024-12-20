@@ -23,7 +23,7 @@ const ForgotPassword = () => {
                       <h1 className="text-[#2D3035] font-semibold text-center font-urbanist leading-[38px] text-[30px]">
                         Account Recovery
                       </h1>
-                      <h1 className="text-[#626974] font-normal text-center font-urbanist tracking-[0%] leading-[24px] text-[16px]">
+                      <h1 className="text-[#626974] font-normal text-center  tracking-[0%] font-urbanist leading-[24px] text-[16px]">
                         Reset your password to regain access to your Venue
                         account. Enter your email for further instructions.
                       </h1>

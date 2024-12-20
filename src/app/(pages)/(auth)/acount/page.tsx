@@ -6,7 +6,7 @@ import CardInputForm from "../components/cardinput";
 import Link from "next/link";
 const Acount = () => {
   return (
-    <div className=" xl:bg-[url('/bg-imges/acountbg.png')] h-scree  flex justify-center bg-cover ">
+    <div className=" xl:bg-[url('/bg-imges/acountbg.png')] flex justify-center bg-cover ">
       <div className="flex justify-between xl:w-[1440px]">
         {" "}
         {/* Left container */}
