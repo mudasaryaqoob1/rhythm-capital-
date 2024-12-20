@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-  const unProtectedRoutes = ['Login', 'acount', 'ForgotPassword', 'OtpRecovery', 'planes', 'ReNewPassword', 'SignUp', 'tradingPlatforms'];
+  const unProtectedRoutes = ['Login', 'acount', 'ForgotPassword', 'OtpRecovery', 'planes', 'ReNewPassword', 'SignUp', 'tradingPlatforms', '' ];
   const isUnProtectedRoute = unProtectedRoutes.includes(pathname.split('/')[1]);
 
 
