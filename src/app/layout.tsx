@@ -35,12 +35,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <div className= {!isUnProtectedRoute ? 'flex w-full max-w-[1440px] my-0 mx-auto': ''}>
-          <div className="">
-          {!isUnProtectedRoute ? <SideBar /> : null}
-            
+         <div className={!isUnProtectedRoute ? "flex w-full max-w-[1440px] my-0 mx-auto" : ""}>
+          {/* Sidebar */}
+          {!isUnProtectedRoute && (
+            <div className="w-[312px] h-full bg-gray-100">
+              <SideBar />
+            </div>
+          )}
+
+          {/* Main Content */}
+          <div className={!isUnProtectedRoute ? "flex-grow" : ""}>
+            {children}
           </div>
-          <div className=""> {children}</div>
         </div>
       </body>
     </html>

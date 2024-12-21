@@ -176,3 +176,11 @@ span {
 .menu-item:hover svg path {
   stroke: black;
 }
+.custom-select .ant-select-selector {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.custom-select .ant-select-arrow {
+  color: #000; /* customize arrow color */
+}
