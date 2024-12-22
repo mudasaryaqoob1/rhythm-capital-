@@ -184,3 +184,6 @@ span {
 .custom-select .ant-select-arrow {
   color: #000; /* customize arrow color */
 }
+.ant-table-pagination.ant-pagination{
+  display: none !important;
+}

@@ -4,8 +4,8 @@ import Link from "next/link";
 export const SideBar = ({}) => {
   return (
     <>
-      <div className="bg-[#022213] w-full max-w-[312px]  text-white">
-        <div className="">
+      <div className="bg-[#022213] w-full max-w-[312px] h-[1380px]  text-white">
+        <div className=" flex h-full flex-col justify-between">
           {/* Logo Section */}
           <div className="logo flex justify-center items-center gap-2 text-center py-6 ">
             <img src="/sidebar/logo-71.png" alt="" />
@@ -13,7 +13,7 @@ export const SideBar = ({}) => {
           </div>
 
           {/* Navigation Links */}
-          <div className=" flex justify-between gap-[170px] flex-col">
+          <div className=" flex  flex-col justify-between  h-full">
             <div className="">
               <ul className="menu mt-4 flex flex-col gap-1 justify-center items-center ">
                 <li className="menu-item hover:bg-[#C1F338] rounded-sm hover:text-black w-[272px] px-3 py-2">
@@ -208,6 +208,7 @@ export const SideBar = ({}) => {
               </ul>
             </div>
             <div className="">
+            <div className="">
               <ul className="menu mt-4 flex flex-col gap-1 justify-center items-center ">
                 <li className="menu-item hover:bg-[#C1F338] rounded-sm hover:text-black w-[248px] px-3 py-2">
                   <Link href="/dashboard">
@@ -273,8 +274,7 @@ export const SideBar = ({}) => {
                 </li>
               </ul>
             </div>
-          </div>
-         <div className="flex justify-center">
+            <div className="flex justify-center">
          <div className=" flex my-6 pt-4 border-t-[1px] border-[#D0D5DD] w-[280px]">
             <div className=" flex gap-3">
                 <div className="">
@@ -290,6 +290,9 @@ export const SideBar = ({}) => {
             </div>
           </div>
          </div>
+            </div>
+          </div>
+        
         </div>
       </div>
     </>
