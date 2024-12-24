@@ -5,15 +5,15 @@ import Card from "../components/cards";
 import Link from "next/link";
 import { BottomBar } from "../components/bottomBar";
 import { Inputs } from "../components/inputs";
-import { Divider, Table } from 'antd';
-import type { TableColumnsType } from 'antd';
+import { Divider, Table } from "antd";
+import type { TableColumnsType } from "antd";
 
 interface DataType {
   key: React.Key;
   Date: string;
   Instrument: string;
   Entry: string;
-  Exit:string;
+  Exit: string;
   PL: string;
 }
 const Dashboard = () => {
@@ -46,56 +46,56 @@ const Dashboard = () => {
     },
   ];
 
-//   table data 
-const columns: TableColumnsType<DataType> = [
-   {
-     title: 'Date',
-     dataIndex: 'Date',
-   },
-   {
-     title: 'Instrument',
-     dataIndex: 'Instrument',
-   },
-   {
-     title: 'Entry',
-     dataIndex: 'Entry',
-   },
-   {
-      title: 'Exit',
-      dataIndex: 'Exit',
+  //   table data
+  const columns: TableColumnsType<DataType> = [
+    {
+      title: "Date",
+      dataIndex: "Date",
     },
     {
-      title: 'P/L',
-      dataIndex: 'PL',
+      title: "Instrument",
+      dataIndex: "Instrument",
     },
- ];
- 
- const data: DataType[] = [
-   {
-      key: '1',
-      Date: '	09/25/2024',
-      Instrument: 'S&P 500 ',
-      Entry: '$4500',
-      Exit: '$4520',
-      PL:'+$200',
-   },
-   {
-     key: '2',
-     Date: 'J	09/25/2024',
-     Instrument: 'S&P 500 ',
-     Entry: '$4500',
-     Exit:'$4520',
-     PL:'+$200',
-   },
-   {
-      key: '3',
-      Date: '	09/25/2024',
-      Instrument: 'S&P 500' ,
-      Entry: '$4500',
-      Exit: '$4520',
-      PL:'+$200',
-   },
- ];
+    {
+      title: "Entry",
+      dataIndex: "Entry",
+    },
+    {
+      title: "Exit",
+      dataIndex: "Exit",
+    },
+    {
+      title: "P/L",
+      dataIndex: "PL",
+    },
+  ];
+
+  const data: DataType[] = [
+    {
+      key: "1",
+      Date: "	09/25/2024",
+      Instrument: "S&P 500 ",
+      Entry: "$4500",
+      Exit: "$4520",
+      PL: "+$200",
+    },
+    {
+      key: "2",
+      Date: "J	09/25/2024",
+      Instrument: "S&P 500 ",
+      Entry: "$4500",
+      Exit: "$4520",
+      PL: "+$200",
+    },
+    {
+      key: "3",
+      Date: "	09/25/2024",
+      Instrument: "S&P 500",
+      Entry: "$4500",
+      Exit: "$4520",
+      PL: "+$200",
+    },
+  ];
   return (
     <div className="flex flex-col justify-between h-[100%]">
       {/* TopBar */}
@@ -149,6 +149,7 @@ const columns: TableColumnsType<DataType> = [
             </div>
           </div>
         </div>
+        {/* trading acount */}
         <div className=" flex gap-4">
           <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] p-4 mt-9 h-[250px] ">
             <div className=" flex justify-between border-b-[1px] pb-4 items-center">
@@ -158,12 +159,12 @@ const columns: TableColumnsType<DataType> = [
                 </h1>
               </div>
               <div className="">
-                <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-md px-[8px] py-[12px]">
+                <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-md py-[8px] px-[12px]">
                   View all
                 </button>
               </div>
             </div>
-            <div className=" h-[162px] overflow-y-auto scrollbar-hide pt-[10px]">
+            <div className=" h-[170px] overflow-y-auto scrollbar-hide pt-[10px]">
               <div className=" mb-3 flex justify-between items-center border-[1px] border-[#D0D5DD] rounded-[12px] p-3 bg-[#F9FEEB]">
                 <div className="flex items-center gap-3">
                   <img src="/dashbord/Featured.png" alt="" />
@@ -175,7 +176,7 @@ const columns: TableColumnsType<DataType> = [
                   </h1>
                 </div>
                 <div className="">
-                  <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#3B3F46]  rounded-md px-[8px] py-[12px]">
+                  <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#3B3F46]  rounded-md py-[8px] px-[12px]">
                     View More
                   </button>
                 </div>
@@ -191,7 +192,7 @@ const columns: TableColumnsType<DataType> = [
                   </h1>
                 </div>
                 <div className="">
-                  <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#3B3F46]  rounded-md px-[8px] py-[12px]">
+                  <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#3B3F46]  rounded-md py-[8px] px-[12px]">
                     View More
                   </button>
                 </div>
@@ -207,7 +208,7 @@ const columns: TableColumnsType<DataType> = [
                   </h1>
                 </div>
                 <div className="">
-                  <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#3B3F46]  rounded-md px-[8px] py-[12px]">
+                  <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#3B3F46]  rounded-md py-[8px] px-[12px]">
                     View More
                   </button>
                 </div>
@@ -245,29 +246,176 @@ const columns: TableColumnsType<DataType> = [
               </div>
             </div>
           </div>
-
         </div>
+        {/* trading table */}
         <div className="flex gap-4">
-         .
-         <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] p-4 mt-9 ">
-         <div className="">
+          .
+          <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] py-4 mt-9 ">
             <div className="">
-            <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
-            Recent Trades 
-              </h1>
-           
+              <div className="px-3 py-3">
+                <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
+                  Recent Trades
+                </h1>
+              </div>
+              <div className="">
+                <Table<DataType>
+                  columns={columns}
+                  dataSource={data}
+                  size="middle"
+                />
+              </div>
             </div>
-            <div className="">
-            <Table<DataType> columns={columns} dataSource={data} size="middle" />
+          </div>
+          <div className="w-full max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9">
+            <div className=" flex justify-between border-b-[1px] pb-4 items-center">
+              <div className="">
+                <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
+                  Useful Links
+                </h1>
+              </div>
+              <div className="">
+                <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-md py-[8px] px-[14px]">
+                  View all
+                </button>
+              </div>
             </div>
-         </div>
-         
-         </div>
-         <div className="w-full max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9"></div>
+            <div className=" h-[204px] overflow-y-auto scrollbar-hide ">
+              <div className="  flex justify-between items-center  p-2">
+                <div className="flex items-center gap-1  ">
+                  <div className="">
+                    {" "}
+                    <img src="/dashbord/Avatar2.png" alt="" />
+                  </div>
+                  <div className="">
+                    <h1 className=" font-urbanist font-semibold text-[#2D3035] leading-[24px] text-[16px]">
+                      Logout
+                    </h1>
+                    <h1 className="font-urbanist  leading-[20px] text-[14px] text-[#475467] font-medium">
+                      Lorem ipsum dolor sit amet
+                    </h1>
+                  </div>
+                </div>
+                <div className="">
+                  <button className="">
+                    <img src="/dashbord/Button.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div className="  flex justify-between items-center  p-2">
+                <div className="flex items-center gap-1 ">
+                  <div className="">
+                    {" "}
+                    <img src="/dashbord/Avatar.png" alt="" />
+                  </div>
+                  <div className="">
+                    <h1 className=" font-urbanist font-semibold text-[#2D3035] leading-[24px] text-[16px]">
+                      Change Your Password
+                    </h1>
+                    <h1 className="font-urbanist  leading-[20px] text-[14px] text-[#475467] font-medium">
+                      Lorem ipsum dolor sit amet
+                    </h1>
+                  </div>
+                </div>
+                <div className="">
+                  <button className="">
+                    <img src="/dashbord/Button.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div className="  flex justify-between items-center  p-2">
+                <div className="flex items-center gap-1  ">
+                  <div className="">
+                    {" "}
+                    <img src="/dashbord/Avatar3.png" alt="" />
+                  </div>
+                  <div className="">
+                    <h1 className=" font-urbanist font-semibold text-[#2D3035] leading-[24px] text-[16px]">
+                      Request for Payout
+                    </h1>
+                    <h1 className="font-urbanist  leading-[20px] text-[14px] text-[#475467] font-medium">
+                      Lorem ipsum dolor sit amet
+                    </h1>
+                  </div>
+                </div>
+                <div className="">
+                  <button className="">
+                    <img src="/dashbord/Button.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div className="  flex justify-between items-center  p-2">
+                <div className="flex items-center gap-1  ">
+                  <div className="">
+                    {" "}
+                    <img src="/dashbord/Avatar4.png" alt="" />
+                  </div>
+                  <div className="">
+                    <h1 className=" font-urbanist font-semibold text-[#2D3035] leading-[24px] text-[16px]">
+                      Payout Method
+                    </h1>
+                    <h1 className="font-urbanist  leading-[20px] text-[14px] text-[#475467] font-medium">
+                      Lorem ipsum dolor sit amet
+                    </h1>
+                  </div>
+                </div>
+                <div className="">
+                  <button className="">
+                    <img src="/dashbord/Button.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        
-                {/* Add more content here */}
+
+        {/* trading chart */}
+        <div className="flex gap-4">
+          .
+          <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] py-4 mt-9 ">
+            <div className="">
+              <div className="px-3 py-3">
+                <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
+                  Profit & Loss Over Time
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div className="w-full max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9">
+            <div className=" flex justify-between border-b-[1px] pb-4 items-center">
+              <div className="">
+                <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
+                  Helpful Articles
+                </h1>
+              </div>
+              <div className="">
+                <button className=" border-[1px] border-[#D0D5DD] bg-[#FFFFFF] hover:bg-[#efebeb] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-md py-[8px] px-[14px]">
+                  View all
+                </button>
+              </div>
+            </div>
+            <div className=" h-[204px] overflow-y-auto scrollbar-hide pt-2 ">
+              <img src="/dashbord/Image.png" alt="" />
+              <div className="  flex justify-between pt-3  p-2">
+                <div className="">
+                  <h1 className=" font-urbanist font-semibold text-[#2D3035] leading-[24px] text-[16px]">
+                    Can Traders Participate?
+                  </h1>
+                  <h1 className="font-urbanist w-full max-w-[300px]  leading-[20px] text-[14px] text-[#475467] font-medium">
+                    Linear helps streamline software projects, sprints, tasks,
+                    and bug tracking. Here’s how to get started.
+                  </h1>
+                </div>
+
+                <div className="">
+                  <button className="">
+                    <img src="/dashbord/Icon2.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Add more content here */}
       </div>
       {/* fotter  */}
       <BottomBar />

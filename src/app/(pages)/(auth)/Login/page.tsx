@@ -74,7 +74,8 @@ const Login = () => {
                   </div>
                   <div className="mt-2">
                     <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform   rounded-[8px] px-24 md:px-[160.5px]">
-                      Login
+                      
+                      <Link href="/Dashboard">Login</Link>
                     </button>
                     <div className="flex justify-center mt-4">
                       <h1 className="text-[#626974] font-normal text-center font-urbanist tracking-[0%] leading-[20px] text-[14px]">
