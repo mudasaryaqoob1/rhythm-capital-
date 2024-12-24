@@ -1,9 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 import SliderComponent from "../components/testimonialSlider";
 import CardInputForm from "../components/cardinput";
-import Link from "next/link";
 const Acount = () => {
   return (
     <div className=" xl:bg-[url('/bg-imges/acountbg.png')] flex justify-center bg-cover ">
