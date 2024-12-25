@@ -7,6 +7,7 @@ import { BottomBar } from "../components/bottomBar";
 import { Inputs } from "../components/inputs";
 import { Divider, Table } from "antd";
 import type { TableColumnsType } from "antd";
+import Chart from "../components/graphChart";
 
 interface DataType {
   key: React.Key;
@@ -44,6 +45,7 @@ const Dashboard = () => {
       icon: <img src="/dashbord/line-chart-down-02.png" alt="" />,
       bgColor: "bg-[#8AFF8A]",
     },
+
   ];
 
   //   table data
@@ -370,13 +372,17 @@ const Dashboard = () => {
 
         {/* trading chart */}
         <div className="flex gap-4">
-          .
+          
           <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] py-4 mt-9 ">
             <div className="">
               <div className="px-3 py-3">
-                <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
+               <div className=""> <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
                   Profit & Loss Over Time
                 </h1>
+                </div>
+                <div className="">
+                  <Chart/>
+                </div>
               </div>
             </div>
           </div>
@@ -422,5 +428,5 @@ const Dashboard = () => {
     </div>
   );
 };
-
+// npm run build 
 export default Dashboard;
