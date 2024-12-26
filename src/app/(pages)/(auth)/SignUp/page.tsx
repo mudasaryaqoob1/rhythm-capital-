@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Inputs } from "@/app/(pages)/(auth)/components/inputs";
-import Image from "next/image";
 import Link from "next/link";
 // import { InfoCircleOutlined, UserOutlined } from "@ant-design/icons";
 import { Input, Tooltip } from "antd";

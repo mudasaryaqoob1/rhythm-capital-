@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import Link from "next/link";
-import { Select, Space } from 'antd';
+import React from "react";
+import { Select } from 'antd';
 
 const handleChange = (value: string) => {
   console.log(`selected ${value}`);

@@ -1,7 +1,5 @@
 import React from "react";
-import { Form, Button, Input, Typography } from "antd";
-
-const { Title } = Typography;
+import { Form, Button, Input } from "antd";
 
 const OTPForm: React.FC = () => {
   const handleFinish = (values: any) => {

@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import { Inputs } from "@/app/(pages)/(auth)/components/inputs"
-import Image from "next/image";
-import Link from "next/link";
 import InfoPenal from "../components/InfoPanel";
 import OTPComponent from "../components/OTPComponent"
 const OtpRecovery = () => {

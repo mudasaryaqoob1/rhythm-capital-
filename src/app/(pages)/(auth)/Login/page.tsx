@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Inputs } from "@/app/(pages)/(auth)/components/inputs";
-import Image from "next/image";
 import InfoPenal from "../components/InfoPanel";
 import Link from "next/link";
 const Login = () => {

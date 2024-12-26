@@ -13,7 +13,7 @@ const TeamSelection = () => {
     { logo: "/tradingPlatform/logotrading8.png" },
   ];
 
-  const [selectedPlatform, setSelectedPlatform] = useState(null);
+  const [selectedPlatform, setSelectedPlatform] = useState(0);
 
   return (
     <div className="h-screen flex flex-col justify-between">

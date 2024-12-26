@@ -5,7 +5,7 @@ import Card from "../components/cards";
 import Link from "next/link";
 import { BottomBar } from "../components/bottomBar";
 import { Inputs } from "../components/inputs";
-import { Divider, Table } from "antd";
+import {  Table } from "antd";
 import type { TableColumnsType } from "antd";
 import Chart from "../components/graphChart";
 
