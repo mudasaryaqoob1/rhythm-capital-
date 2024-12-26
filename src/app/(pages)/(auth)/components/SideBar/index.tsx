@@ -4,7 +4,7 @@ import Link from "next/link";
 export const SideBar = ({}) => {
   return (
     <>
-      <div className="bg-[#022213] w-full max-w-[312px] h-[1400px]  text-white">
+      <div className="bg-[#022213] w-full max-w-[312px] h-[1420px]  text-white">
         <div className=" flex h-full flex-col justify-between">
           {/* Logo Section */}
           <div className="logo flex justify-center items-center gap-2 text-center py-6 ">
