@@ -6,7 +6,7 @@ import Link from "next/link";
 const Login = () => {
   return (
     <div className=" xl:bg-[url('/bg-imges/ds.png')] h-screen  flex justify-center bg-cover ">
-      <div className="flex w-full xl:max-w-[1440px]">
+      <div className="flex  xl:w-[1440px]">
         {" "}
         {/* Left container */}
         <div className="">

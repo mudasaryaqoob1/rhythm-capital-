@@ -172,7 +172,6 @@ span {
   color: #555;
   font-family: "Urbanist", sans-serif;
 }
-/* جب `li` پر hover ہو، تو اس کے اندر موجود `svg` کے `path` کا stroke رنگ تبدیل ہو جائے گا */
 .menu-item:hover svg path {
   stroke: black;
 }
@@ -189,4 +188,13 @@ span {
 }
 .apexcharts-toolbar {
 display: none !important;
+}
+.ant-tabs-tab-btn{
+  color: #2D3035 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important; 
+  line-height: 28px !important;
+}
+.ant-tabs-ink-bar{
+  background-color: #2D3035 !important;
 }

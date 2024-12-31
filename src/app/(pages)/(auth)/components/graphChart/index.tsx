@@ -7,7 +7,7 @@ const Chart = () => {
     series: [
       {
         name: "Profit an Loss",
-        data: [0, 200, 180, 400, 260, 340, 320, 400, 350, 400, 320, 390,400,360,400, 360, 460,500],
+        data: [0, 200, 180, 400, 260,  390,400,360,400, 360, 460,500],
       },
     ],
     options: {
@@ -37,7 +37,7 @@ const Chart = () => {
         },
       },
       xaxis: {
-        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec","Jan", "Feb", "Mar", "Apr", "May", "Jun",],
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",],
         tickAmount: 12,
          tickPlacement: "between",
          

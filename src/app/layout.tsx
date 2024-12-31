@@ -37,7 +37,7 @@ export default function RootLayout({
          <div className={!isUnProtectedRoute ? "flex w-full max-w-[1440px] my-0 mx-auto" : ""}>
           {/* Sidebar */}
           {!isUnProtectedRoute && (
-            <div className="w-[312px] h-full bg-gray-100">
+            <div className="">
               <SideBar />
             </div>
           )}

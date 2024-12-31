@@ -114,12 +114,12 @@ const Dashboard = () => {
           Lorem ipsum dolor sit amet consectetur. Diam adipiscing eget semper
           orci ultrices facilisis fermentum.{" "}
         </p>
-        <div className="flex gap-4 ">
-          <div className=" max-w-[441px] w-full bg-[url('/dashbord/bg.png')] relative bg-cover rounded-[12px] bg-no-repeat ">
+        <div className="flex xl:flex-row items-center flex-col justify-between ">
+          <div className=" lg:max-w-[441px] max-w-[600px] h-[300px] lg:h-auto w-full bg-[url('/dashbord/bg.png')] relative md:bg-cover rounded-lg bg-no-repeat ">
             <div className="w-full ">
               <div className="">
                 {/* Text Over Background */}
-                <div className="flex pl-4 flex-col">
+                <div className="flex pl-4 mer flex-col">
                   <p className=" pl-4 pt-5 text-[#18181B] font-bold font-urbanist leading-[30px] text-[20px]">
                     Good Afternoon, Hamza 👋
                   </p>
@@ -137,7 +137,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-1 md:grid-cols-2  gap-4">
               {cards.map((card, index) => (
                 <Card
                   key={index}
@@ -152,7 +152,7 @@ const Dashboard = () => {
           </div>
         </div>
         {/* trading acount */}
-        <div className=" flex gap-4">
+        <div className=" flex lg:flex-row items-center flex-col gap-4">
           <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] p-4 mt-9 h-[250px] ">
             <div className=" flex justify-between border-b-[1px] pb-4 items-center">
               <div className="">
@@ -217,7 +217,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w-full max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9 h-[250px] ">
+          <div className="w-full lg:max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9 h-[250px] ">
             <div className="">
               <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
                 Trading View Account
@@ -250,9 +250,9 @@ const Dashboard = () => {
           </div>
         </div>
         {/* trading table */}
-        <div className="flex gap-4">
+        <div className="flex xl:flex-row flex-col items-center gap-4">
           .
-          <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] py-4 mt-9 ">
+          <div className="w-full xl:max-w-[715px] bg-white shadow-md rounded-[8px] py-4 mt-9 ">
             <div className="">
               <div className="px-3 py-3">
                 <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
@@ -268,7 +268,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w-full max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9">
+          <div className="w-full xl:max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9">
             <div className=" flex justify-between border-b-[1px] pb-4 items-center">
               <div className="">
                 <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
@@ -371,9 +371,9 @@ const Dashboard = () => {
         </div>
 
         {/* trading chart */}
-        <div className="flex gap-4">
+        <div className="flex xl:flex-row flex-col items-center gap-4">
           
-          <div className="w-full max-w-[715px] bg-white shadow-md rounded-[8px] py-4 mt-9 ">
+          <div className="w-full xl:max-w-[715px] bg-white shadow-md rounded-[8px] py-4 mt-9 ">
             <div className="">
               <div className="px-3 py-3">
                <div className=""> <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
@@ -386,7 +386,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w-full max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9">
+          <div className="w-full xl:max-w-[348px] bg-white shadow-md rounded-[8px] p-4 mt-9">
             <div className=" flex justify-between border-b-[1px] pb-4 items-center">
               <div className="">
                 <h1 className=" font-urbanist font-bold text-[#000000] leading-[28px] text-[18px]">
@@ -400,7 +400,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className=" h-[204px] overflow-y-auto scrollbar-hide pt-2 ">
-              <img src="/dashbord/Image.png" alt="" />
+              <img src="/dashbord/Image.png" alt="" className="w-full xl:w-auto" />
               <div className="  flex justify-between pt-3  p-2">
                 <div className="">
                   <h1 className=" font-urbanist font-semibold text-[#2D3035] leading-[24px] text-[16px]">
