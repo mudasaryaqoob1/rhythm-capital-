@@ -91,7 +91,7 @@ const PayoutTabs: React.FC = () => {
       <div>
           <div className="">
           <div className="my-3">
-                <h1 className="text-[18px] text-[#2D3035] leading-[28px] font-semibold">Current Payout Method</h1>
+                <h1 className="text-[18px] text-[#2D3035] leading-[28px] font-semibold">Available Payout Method</h1>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center  lg:grid-cols-3  gap-4">
               <div className="p-4 max-w-[351px] w-full  rounded-xl bg-white border-[1px] border-[#D0D5DD]">

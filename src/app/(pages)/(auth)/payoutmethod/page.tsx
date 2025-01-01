@@ -1,13 +1,8 @@
 "use client";
 import React from "react";
 import { TopBar } from "../components/topbar";
-import Card from "../components/cards";
 import Link from "next/link";
 import { BottomBar } from "../components/bottomBar";
-import { Inputs } from "../components/inputs";
-import { Table } from "antd";
-import type { TableColumnsType } from "antd";
-import Chart from "../components/graphChart";
 import PayoutTabs from "../components/payoutTabs";
 
 const Dashboard = () => {
@@ -19,7 +14,7 @@ const Dashboard = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-grow p-4 bg-gray-50">
+      <div className="flex-grow p-6 bg-gray-50">
         <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-center">
           <div className="">
             <h1 className="text-[24px] text-[#1F2A37] leading-[32px] font-bold">
