@@ -5,7 +5,7 @@ import Link from "next/link";
 import { BottomBar } from "../components/bottomBar";
 import PayoutTabs from "../components/payoutTabs";
 
-const Dashboard = () => {
+const PayoutMethod = () => {
   return (
     <div className="flex flex-col justify-between h-[100%]">
       {/* TopBar */}
@@ -18,10 +18,10 @@ const Dashboard = () => {
         <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-center">
           <div className="">
             <h1 className="text-[24px] text-[#1F2A37] leading-[32px] font-bold">
-            Payouts
+              Payouts
             </h1>
             <p className="font-normal text-[#9DA4AE] font-urbanist leading-[24px] text-[16px]">
-            You can View, manage and update the payout from here
+              You can View, manage and update the payout from here
             </p>
           </div>
           <div className=" flex gap-2">
@@ -32,7 +32,7 @@ const Dashboard = () => {
             </Link>{" "}
             <Link href="/">
               <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-[8px] px-[10px] md:px-[14px]">
-              Request a Payout
+                Request a Payout
               </button>
             </Link>
           </div>
@@ -40,13 +40,8 @@ const Dashboard = () => {
 
         {/* trading acount */}
         <div className="mt-5">
-          <PayoutTabs/>
+          <PayoutTabs />
         </div>
-        {/* trading table */}
-
-        {/* trading chart */}
-
-        {/* Add more content here */}
       </div>
       {/* fotter  */}
       <BottomBar />
@@ -54,4 +49,4 @@ const Dashboard = () => {
   );
 };
 // npm run build
-export default Dashboard;
+export default PayoutMethod;

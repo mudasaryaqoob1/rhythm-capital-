@@ -45,6 +45,7 @@ const Dashboard = () => {
       icon: <img src="/dashbord/line-chart-down-02.png" alt="" />,
       bgColor: "bg-[#8AFF8A]",
     },
+    
 
   ];
 

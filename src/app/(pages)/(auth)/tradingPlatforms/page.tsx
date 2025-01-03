@@ -36,7 +36,7 @@ const TeamSelection = () => {
             className={`flex items-center justify-between border-[1px] rounded-xl p-4 w-[310px] md:w-[346px] h-[102px] bg-white shadow-md cursor-pointer ${
               selectedPlatform === index ? "border-[#C1F338]" : "border-gray-300"
             }`}
-            onClick={() => setSelectedPlatform(index)} // پورے div پر کلک سے انتخاب ہوگا
+            onClick={() => setSelectedPlatform(index)} 
           >
             <img
               src={platform.logo}
@@ -55,7 +55,7 @@ const TeamSelection = () => {
                 name="platform"
                 className="appearance-none absolute w-full h-full cursor-pointer"
                 checked={selectedPlatform === index}
-                readOnly // ویلیو صرف state کے ذریعے سیٹ ہو رہی ہے
+                readOnly
               />
               {selectedPlatform === index && (
                 <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-black rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
