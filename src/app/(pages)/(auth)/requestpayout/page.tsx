@@ -16,13 +16,14 @@ const PayoutMethod = () => {
   };
   return (
     <div className="flex flex-col justify-between h-[100%]">
-      {/* TopBar */}
-      <div className=" w-full max-w-[1128px] ">
-        <TopBar />
-      </div>
-      {/* Main Content */}
-      <div className="flex-grow p-6 bg-gray-50">
-        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-center">
+    {/* TopBar */}
+     <div className=" w-full max-w-[1128px] ">
+            <TopBar />
+          </div>
+
+    {/* Main Content */}
+    <div className="flex-grow p-6 bg-gray-50">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between md:items-center">
           <div className="">
             <h1 className="text-[24px] text-[#1F2A37] leading-[32px] font-bold">
               Request Payout
@@ -326,17 +327,53 @@ const PayoutMethod = () => {
                 PA Payments
               </h1>
             </div>
-            <div className="">
+            <div className="p-[2px]">
               <RequestPayoutTable />
             </div>
           </div>
         </div>
+        <div className="mt-4 rounded-xl border-[1px] bg-white border-[#D0D5DD]">
+          <div className="">
+            <div className=" p-4 ">
+              <h1 className="text-[18px] text-[#1F2A37] leading-[28px] font-bold">
+                PA Payments
+              </h1>
+            </div>
+            <div className=" p-4 flex items-center justify-center">
+             <div className=" flex flex-col justify-center gap-4 items-center">
+             <div className="">
+              <img src="/requestPyouts/Illustration.png" alt="" />
+             </div>
+             <div className="">
+             <h1 className="text-[16px] text-center text-[#263238] leading-[24px] font-bold">
+             Nothing to Show Just Yet!
+              </h1>
+              <h1 className="text-[14px] pt-1 text-center text-[#898F99] leading-[20px] font-normal">
+              Looks like you haven't added anything yet. Don't worry, Click below to request for payout"
+              </h1>
+             </div>
+             <div className="">
+             <Link href="/">
+                  <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-md px-[10px] md:px-[14px]">
+                    Request a Payout
+                  </button>
+                </Link>
+             </div>
+
+             </div>
+           
+            </div>
+          </div>
+        </div>
       </div>
-      {/* bootom bar footer  */}
-      <div className="">
-        <BottomBar />
-      </div>
-    </div>
+    {/* fotter  */}
+    <BottomBar />
+  </div>
+
+
+
+
+
   );
 };
 export default PayoutMethod;
