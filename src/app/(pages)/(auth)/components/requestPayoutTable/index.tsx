@@ -26,7 +26,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Account',
     dataIndex: 'Account',
     key: 'Account',
-    render: (text) => <a className='font-semibold font-urbanist text-[14px] leading-[20px] text-[solid]'>{text}</a>,
+    render: (text) => <a className='font-semibold font-urbanist text-[10px] md:text-[14px] leading-[20px] text-[solid]'>{text}</a>,
   },
   {
     title: 'Payout ID',

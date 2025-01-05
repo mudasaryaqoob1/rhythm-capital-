@@ -117,7 +117,8 @@ export const PayoutMethods = () => {
           </div>
         </div>
       </div>
-      <Modal
+    <div className="">
+    <Modal
         title="Add Account Details"
         open={isModalOpen}
         onOk={handleOk}
@@ -180,6 +181,7 @@ export const PayoutMethods = () => {
           </div>
         </div>
       </Modal>
+    </div>
     </div>
   );
 };

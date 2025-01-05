@@ -260,17 +260,38 @@ display: none !important;
   color: #6C737F !important;
   font-family: 'Urbanist', sans-serif !important;
 }
+
 .ant-table-wrapper .ant-table-thead >tr>th{
   color: #475467 !important;
   font-weight: 500 !important;
-  font-size: 12px !important;
-  line-height: 18px !important;
+  /* font-size: 10px !important; */
+  /* line-height: 18px !important; */
   font-family: 'Urbanist', sans-serif !important;
 }
 .ant-table-tbody >tr >td {
   color: #475467 !important;
   font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: 20px !important;
+  /* font-size: 12px !important; */
+  /* line-height: 20px !important; */
   font-family: 'Urbanist', sans-serif !important;
+}
+@media (max-width: 768px) {
+  .ant-table-content {
+    font-size: 8px !important;
+  }
+  
+.ant-table-tbody>tr>td {
+    padding: 14px 4px !important; 
+  }
+}
+
+.custom-modal .ant-modal-content {
+  max-width: 400px !important;
+  width: 100% !important;
+}
+.custom-modal .ant-btn-variant-outlined{
+  display: none !important;
+}
+.custom-modal .ant-btn-variant-solid{
+  width: 100% !important;
 }

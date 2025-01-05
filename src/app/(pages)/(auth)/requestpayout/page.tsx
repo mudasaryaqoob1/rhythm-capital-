@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import { useState} from "react";
 import { TopBar } from "../components/topbar";
 import Link from "next/link";
 import { BottomBar } from "../components/bottomBar";
 import { Alert, Flex } from "antd";
 import { Select } from "antd";
+import { Modal } from "antd";
 import RequestPayoutTable from "../components/requestPayoutTable";
 
 const PayoutMethod = () => {
@@ -14,6 +15,19 @@ const PayoutMethod = () => {
   const handleChange = (value: string) => {
     console.log(`selected ${value}`);
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const showModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleOk = () => {
+      setIsModalOpen(false);
+    };
+  
+    const handleCancel = () => {
+      setIsModalOpen(false);
+    };
   return (
     <div className="flex flex-col justify-between h-[100%]">
     {/* TopBar */}
@@ -310,11 +324,41 @@ const PayoutMethod = () => {
                 </div>
               </div>
               <div className="mt-5">
-                <Link href="/">
-                  <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-[8px] px-[10px] md:px-[14px]">
+                {/* <Link href="/"> */}
+                  <button onClick={showModal} className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-[8px] px-[10px] md:px-[14px]">
                     Request a Payout
                   </button>
-                </Link>
+                {/* </Link> */}
+
+   {/* model popup btn */}
+   <div id="" className="custom-modal">
+ <Modal
+        title=""
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        okText="Continue"
+         className="custom-modal"
+      >
+     <div className="">
+        
+     <div className="my-4 flex justify-center items-center flex-col gap-4">
+         <div className="">
+          <img src="/requestPyouts/Featured.png" alt="" />
+         </div>
+         <div className="">
+         <h1 className="text-[20px] text-center text-[#101828] leading-[30px] font-bold">
+         Payout Success
+              </h1>
+              <h1 className="text-[14px] text-center text-[#475467] leading-[20px] font-normal">
+              Your payout has been successfully requested. We will inform you further on your email address.
+              </h1>
+         </div>
+        </div>
+     </div>
+      </Modal>
+</div>
+
               </div>
             </div>
           </div>
@@ -354,10 +398,11 @@ const PayoutMethod = () => {
              </div>
              <div className="">
              <Link href="/">
-                  <button className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-md px-[10px] md:px-[14px]">
+                  <button  className="py-[10px] border-[1px] border-[#89AD28] bg-[#c1f338] hover:bg-[#9dc72c] transition-all duration-1000 transform font-urbanist font-semibold text-[14px] leading-[20px] text-[#2D3035]  rounded-md px-[10px] md:px-[14px]">
                     Request a Payout
                   </button>
                 </Link>
+             
              </div>
 
              </div>
