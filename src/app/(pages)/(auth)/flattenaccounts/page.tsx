@@ -1,33 +1,14 @@
 "use client";
-import { useState } from "react";
+import React from "react";
 import { TopBar } from "../components/topbar";
 import Link from "next/link";
 import { BottomBar } from "../components/bottomBar";
-import { Alert, Flex } from "antd";
-import { Select } from "antd";
-import { Modal } from "antd";
-import RequestPayoutTable from "../components/requestPayoutTable";
+import { Alert } from "antd";
 import FlattenTable from "../components/flattenAccount";
 
-const PayoutMethod = () => {
+const FlattenAccount = () => {
   const onClose = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     console.log(e, "I was closed.");
-  };
-  const handleChange = (value: string) => {
-    console.log(`selected ${value}`);
-  };
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
   };
   return (
     <div className="flex flex-col justify-between h-[100%]">
@@ -149,4 +130,4 @@ const PayoutMethod = () => {
     </div>
   );
 };
-export default PayoutMethod;
+export default FlattenAccount;

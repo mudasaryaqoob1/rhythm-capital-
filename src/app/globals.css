@@ -299,3 +299,7 @@ display: none !important;
 .ant-checkbox-inner{
   position: relative !important;
 }
+
+.custom-modal .ant-btn+.ant-btn{
+  margin-inline-start: 0px !important;
+}
