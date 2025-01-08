@@ -7,6 +7,7 @@ import { Alert, Flex } from "antd";
 import { Select } from "antd";
 import { Modal } from "antd";
 import RequestPayoutTable from "../components/requestPayoutTable";
+import FlattenTable from "../components/flattenAccount";
 
 const PayoutMethod = () => {
   const onClose = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -136,8 +137,10 @@ const PayoutMethod = () => {
         </div>
 
         {/* request a payouts div start */}
-        <div className="p-4 mt-4 rounded-xl border-[1px] bg-white border-[#D0D5DD]">
-          <div className=""></div>
+        <div className="p mt-4 rounded-xl border-[1px] bg-white border-[#D0D5DD]">
+          <div className="">
+            <FlattenTable/>
+          </div>
         </div>
         {/*  taable content start */}
       </div>
