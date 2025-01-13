@@ -81,6 +81,7 @@
 }
 
 .custom-input {
+  left: 0%;
   border-color: #e0e0e0; /* Default border color */
   box-shadow: none; /* Remove default Ant Design shadow */
   transition: all 0.3s ease; /* Smooth transition */
@@ -98,6 +99,7 @@
 .custom-input:not(:focus) {
   border-color: #e0e0e0 !important; /* Remove blue border after blur */
   box-shadow: none !important; /* Remove any shadow after blur */
+  margin-left: 0px !important;
 }
 .plane-card {
   background-color: white;

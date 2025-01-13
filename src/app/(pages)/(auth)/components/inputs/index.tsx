@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React, { useState } from "react";
 
 interface Propss {
@@ -7,11 +7,11 @@ interface Propss {
   type: string;
   Placeholder: string;
   svg: React.ReactNode; // First icon (e.g., mail/lock icon)
-  svg2?: React.ReactNode; // Second icon (optional, e.g., visibility icon)
+  svg2?: React.ReactNode; 
   className?: string; // Additional CSS classes
-  // Value of the input
-  //   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // Formik onChange handler
-  //   onBlur: (e: React.FocusEvent<HTMLInputElement>) => void; // Formik onBlur handler
+  value: string; // Value of the input
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // Formik onChange handler
+  onBlur: (e: React.FocusEvent<HTMLInputElement>) => void; 
 }
 
 export const Inputs: React.FC<Propss> = ({
@@ -21,10 +21,10 @@ export const Inputs: React.FC<Propss> = ({
   className,
   svg2,
   type,
-  //   value,
+  value,
   name,
-  //   onChange,
-  //   onBlur,
+  onChange,
+  onBlur,
 }) => {
   // Move useState inside the functional component
   const [showPassword, setShowPassword] = useState(false);
@@ -51,6 +51,9 @@ export const Inputs: React.FC<Propss> = ({
           className="outline-none focus:outline-none focus:ring-4 focus:ring-[#1018280D] focus:ring-offset-1 focus:ring-offset-[#c1f338] w-full xl:max-w-[500px] border-[2px] rounded-[8px] bg-gray py-[10px] pl-[14px] mt-[9.7px]  font-urbanist font-normal  text-[16px] leading-[27px]"
           type={type === "password" && showPassword ? "text" : type} // Toggle password visibility
           placeholder={Placeholder}
+          value={value} // Bind formik value
+          onChange={onChange} // Bind formik onChange
+          onBlur={onBlur} // Bind formik onBlur
         />
         {/* Optional second icon (e.g., visibility toggle) */}
         {svg2 && (
